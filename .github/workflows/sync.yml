@@ -1,0 +1,24 @@
+on:
+  schedule:
+    - cron: '0 0 * * *' # every day at midnight
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync template
+        uses: AndreasAugustin/actions-template-sync@v2
+        with:
+          source_repo_path: adelrodriguez/wingman
+          upstream_branch: main
+          pr_labels: template_sync
+          pr_title: Sync the latest `wingman` template changes
+          is_pr_cleanup: true

@@ -1,4 +1,5 @@
-import { Hono } from 'hono'
+import { Hono } from "hono"
+import { StatusCodes } from "http-status-codes"
 
 type Bindings = {
   [key in keyof CloudflareBindings]: CloudflareBindings[key]
@@ -6,8 +7,8 @@ type Bindings = {
 
 const app = new Hono<{ Bindings: Bindings }>()
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
+app.get("/", (c) => {
+  return c.text("Hello Wingman!", { status: StatusCodes.OK })
 })
 
 export default app
