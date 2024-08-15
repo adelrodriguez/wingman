@@ -1,7 +1,6 @@
 {
   "name": "wingman",
   "scripts": {
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
     "check": "biome check --write src",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -16,7 +15,8 @@
     "template:setup": "bun scripts/setup.ts",
     "template:sync": "bun scripts/sync.ts",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "typegen:cf": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
     "@hono/zod-validator": "0.2.2",
