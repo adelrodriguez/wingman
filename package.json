@@ -31,9 +31,9 @@
     "@cloudflare/workers-types": "4.20240806.0",
     "@types/bun": "1.1.6",
     "drizzle-kit": "0.24.0",
-    "taze": "^0.16.3",
+    "taze": "^0.16.6",
     "typescript": "5.5.4",
     "vitest": "^2.0.5",
-    "wrangler": "3.70.0"
+    "wrangler": "3.71.0"
   }
 }

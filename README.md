@@ -33,3 +33,4 @@ You don't have to limit yourself to a "small" project. You can use Cloudflare WW
 ## TODO
 
 - [ ] Add a setup script
+- [ ] Add action for deploying on push: https://github.com/cloudflare/wrangler-action
