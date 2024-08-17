@@ -1,1 +1,5 @@
 # Include any files you wish to exclude from the template sync GitHub action
+
+# We exclude the lockfile since we don't want conflicts from installing project dependencies
+
+bun.lockb

@@ -1,4 +1,4 @@
-name: Sync with template
+name: Sync with the Wingman template
 
 on:
   schedule:
