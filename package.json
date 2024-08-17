@@ -34,6 +34,6 @@
     "taze": "^0.16.6",
     "typescript": "5.5.4",
     "vitest": "^2.0.5",
-    "wrangler": "3.71.0"
+    "wrangler": "^3.72.0"
   }
 }
