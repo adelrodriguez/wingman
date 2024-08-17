@@ -2,7 +2,7 @@
 // recommended to use the GitHub action included instead, but this script is
 // useful to update the repo in case the action fails.
 
-import { cancel, select, spinner } from "@clack/prompts"
+import { cancel, isCancel, select, spinner } from "@clack/prompts"
 // Note that this does not respect the .templatesyncignore file, so it will try
 // to merge all the changes made to the template. Use with caution if you have
 // several files ignored.
@@ -25,7 +25,7 @@ if (!remotes.includes("template")) {
     ],
   })
 
-  if (!confirmation) {
+  if (!confirmation || isCancel(confirmation)) {
     cancel(
       "Please add the template remote by running the command: `git remote add template git@github.com:adelrodriguez/startline.git`",
     )
