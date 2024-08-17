@@ -50,6 +50,6 @@ s.stop("Template remote fetched")
 
 s.start("Merging template remote...")
 
-await $`git merge template/main --allow-unrelated-histories`
+await $`git merge template/main --allow-unrelated-histories --no-commit`
 
 s.stop("Template remote merged. Please resolve any conflicts.")
