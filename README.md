@@ -6,6 +6,8 @@
   </p>
 </p>
 
+This project is built with [Wingman](https://github.com/adelrodriguez/wingman).
+
 Wingman is an opinionated starter template for building Cloudflare Workers. It includes a set of my personal preferences when building projects using Cloudflare Workers.
 
 Cloudflare Workers are great for building small APIs to complement a bigger project. A wingman to your project, if you will.
@@ -33,4 +35,3 @@ You don't have to limit yourself to a "small" project. You can use Cloudflare WW
 ## TODO
 
 - [ ] Add a setup script
-- [ ] Add action for deploying on push: https://github.com/cloudflare/wrangler-action
